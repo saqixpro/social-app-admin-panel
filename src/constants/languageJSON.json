@@ -1,0 +1,7 @@
+{
+  "INVALID_PASSWORD": "password between 6 to 10 characters which contain only characters, numeric digits, underscore and first character must be a letter",
+  "INVALID_EMAIL": "Email  not valid",
+  "INVALID_USERNAME": "Username Already Taken",
+  "INVALID_NAME": "Name Must Be at Least 8 Characters",
+  "INVALID_C_PASSWORD": "Passwords Does Not Match"
+}
