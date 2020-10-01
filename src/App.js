@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Login, SignUp } from "./screens";
+import "./constants/firebase";
+import { Login, SignUp, MainScreen } from "./screens";
+import { ProtectedRoute } from "./components";
 function App() {
   return (
     <Router>
@@ -8,9 +10,10 @@ function App() {
         <Route exact component={SignUp} path={`/signup`}>
           <SignUp />
         </Route>
-        <Route exact component={Login} path="/">
+        <Route exact component={Login} path="/login">
           <Login />
         </Route>
+        <ProtectedRoute exact component={MainScreen} path="/" />
       </Switch>
     </Router>
   );
