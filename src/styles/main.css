@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
 .dashboardCard {
   background-color: #fff;
   box-shadow: 10px 10px 13px #ccc;
@@ -26,9 +32,79 @@
 }
 
 .db-cards {
-  height: 100%;
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  width: 150px;
+  height: 150px;
+  background-image: url(../assets//images//image.png);
+  background-size: cover;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 5px 5px 13px #ccc;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border: 0;
+  margin-top: 20px;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+.text-input {
+  margin-top: 5%;
+  width: 90%;
+  border: 0;
+  box-shadow: 5px 5px 13px #ccc;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.text-input input[type="text"] {
+  border: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+.btn {
+  border: 0;
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+}
+
+.submit-button {
+  margin-top: 5%;
+}
+
+.submit-button button {
+  background-color: #000;
+  border: 0;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+}
+
+.btn-text {
+  color: #fff;
+}
+
+.submit-button :hover {
+  background-color: #333;
+}
+
+.submit-button :active {
+  opacity: 0.5;
 }
