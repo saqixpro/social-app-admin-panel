@@ -50,13 +50,17 @@
   background-color: #000;
   border: 0;
   border-bottom: 2px solid white;
-  padding: 30px 15px;
+  padding: 20px 10px;
   margin: 5px 0px;
   width: 90%;
   color: #fff;
 }
 
 .buttonsList :active {
+  opacity: 0;
+}
+
+.button :active {
   opacity: 0;
 }
 
