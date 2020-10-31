@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "../styles/login.css"
-import { Link, Redirect } from "react-router-dom"
+import { Redirect } from "react-router-dom"
 import { Hint, Loading } from "../components"
 import { Button, Input, Icon } from "semantic-ui-react"
 import firebase from "firebase"
@@ -8,7 +8,6 @@ import firebase from "firebase"
 const Login = () => {
 	const [email, setEmail] = useState(null)
 	const [password, setPassword] = useState(null)
-	const [error, setError] = useState(null)
 	const [loggedIn, setLoggedIn] = useState(false)
 	const [loading, setLoading] = useState(false)
 
@@ -82,12 +81,12 @@ const Login = () => {
 							</Button>
 						</div>
 
-						<div style={{ marginTop: "5%" }} className='center'>
+						{/* <div style={{ marginTop: "5%" }} className='center'>
 							<p>
 								Don't Have an Account?{" "}
 								<Link to={{ pathname: "/signup" }}>Sign Up</Link> Here
 							</p>
-						</div>
+						</div> */}
 					</div>
 				)}
 			</div>
